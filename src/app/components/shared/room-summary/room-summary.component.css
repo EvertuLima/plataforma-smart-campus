@@ -1,0 +1,35 @@
+.content-room-summary {
+    background-color: rgb(4, 54, 54);
+    margin: 0.3em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+    width: 20vh;
+    min-height: 30vh;
+    color: white;
+}
+
+.content-room-summary-name {
+    margin: 0;
+    padding: 0;
+}
+
+.content-room-summary-name h4{
+    margin: 0.4em;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.content-room-summary-description {
+    margin: 20;
+    padding: 20;
+}
+
+.content-room-summary-description p{
+    margin: 0.4em;
+    padding: 0;
+    text-align: center;
+}
+

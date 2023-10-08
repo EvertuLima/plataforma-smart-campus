@@ -1,0 +1,11 @@
+.content-footer {
+    min-height: 10vh;
+
+    background: #3f51b5;
+    color: #fff;
+}
+
+.content-marca {
+    padding-top: 1em;
+    text-align: center;
+}

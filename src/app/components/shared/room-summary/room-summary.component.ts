@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class RoomSummaryComponent {
 
+  name:string ="Sala 25";
+  description:string = "Espaço reservado a persquisa e estudo."
 }
