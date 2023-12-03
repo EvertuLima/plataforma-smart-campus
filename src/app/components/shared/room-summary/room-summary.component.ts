@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-room-summary',
@@ -6,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./room-summary.component.css']
 })
 export class RoomSummaryComponent {
+  
+  @Input() name:string ="";
+  @Input() description:string = "";
+  @Input() id?:number;
 
-  name:string ="Sala 25";
-  description:string = "Espaço reservado a persquisa e estudo."
+  
+
 }

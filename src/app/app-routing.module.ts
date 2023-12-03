@@ -6,6 +6,7 @@ import { AboutUsComponent } from './components/pages/about-us/about-us.component
 import { AdvertsComponent } from './components/pages/adverts/adverts.component';
 import { RoomSummaryComponent } from './components/shared/room-summary/room-summary.component';
 import { CreatComponent } from './components/pages/creat/creat.component';
+import { RoomIdComponent } from './components/pages/room-id/room-id.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: "adverts", component: AdvertsComponent},
   {path: "resumo", component: RoomSummaryComponent},
   {path: "create", component: CreatComponent},
+  {path: "room/:id", component: RoomIdComponent}
 ];
 
 @NgModule({

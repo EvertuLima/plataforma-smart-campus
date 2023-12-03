@@ -7,16 +7,12 @@
     <div class="title-place">
         <h2>Locais</h2>
     </div>
-    <div class="places-sumarry">
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
-        <app-room-summary></app-room-summary>
+    <div class="places-sumarry" *ngFor="let local of locais">
+        <app-room-summary 
+          [name]="local.nome" 
+          [description]="local.descricao"
+          [id]="local.id_espaco"
+        ></app-room-summary>
     </div>
   </div>
 </div>

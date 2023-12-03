@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Espaco } from '../../interfaces/Espaco';
 
 @Component({
   selector: 'app-room-id',
