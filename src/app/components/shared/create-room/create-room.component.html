@@ -2,17 +2,17 @@
     <mat-card>
         <mat-card-title>Criar Local</mat-card-title>
         <mat-card-content>
-            <form class="contact-form">
+            <div class="contact-form">
                 <mat-form-field>
                     <mat-label>Nome do Local</mat-label>
-                    <input [(ngModel)]="nome" matInput>
+                    <input [(ngModel)]="nome" name="nome" matInput>
                 </mat-form-field>
                 
                 <mat-form-field>
                     <mat-label>Descrição do local</mat-label>
-                    <textarea [(ngModel)]="descricao" matInput></textarea>
+                    <textarea [(ngModel)]="descricao" name="descricao" matInput></textarea>
                 </mat-form-field>
-            </form>
+            </div>
         </mat-card-content>
 
         <button mat-raised-button (click)="enviarFormulario()" color="primary">Primary</button>
@@ -23,7 +23,7 @@
     <mat-card>
         <mat-card-title>Criar Local</mat-card-title>
         <mat-card-content>
-            <form class="contact-form" #formulario="ngForm" (ngSubmit)="enviarFormulario()">
+            <form class="contact-form" #formulario="ngForm" (ngSubmit)="criarLocal()">
                 <mat-form-field>
                     <mat-label>Nome do Local</mat-label>
                     <input [(ngModel)]="nome" matInput name="nome" required>
@@ -33,8 +33,7 @@
                     <mat-label>Descrição do local</mat-label>
                     <textarea [(ngModel)]="descricao" matInput name="descricao" required></textarea>
                 </mat-form-field>
-
-                <button mat-raised-button type="submit" color="primary">Enviar</button>
+                <button mat-raised-button type="submit" color="primary">Criar</button>
             </form>
         </mat-card-content>
     </mat-card>

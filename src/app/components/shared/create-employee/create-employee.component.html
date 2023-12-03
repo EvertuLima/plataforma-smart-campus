@@ -1,10 +1,30 @@
-<p>Nome do Servidor</p>
-<input type="text">
-<p>Email</p>
-<input type="text">
-<p>Número de tefone</p>
-<input type="text">
-<p>SIAPE</p>
-<input type="text">
-<br>
-<button>Criar Servidor</button>
+<div class="container">
+    <mat-card>
+        <mat-card-title>Cadastrar Servidor</mat-card-title>
+        <mat-card-content>
+            <form class="contact-form" #formulario="ngForm" (ngSubmit)="cadastrarServidor()">
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input [(ngModel)]="nome" matInput name="nome" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input [(ngModel)]="email" matInput name="email" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Número de telefone</mat-label>
+                    <input [(ngModel)]="num_telefone" matInput name="num_telefone" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>SIAPE</mat-label>
+                    <input [(ngModel)]="siape" matInput name="siape" required>
+                </mat-form-field>
+                
+                <button mat-raised-button type="submit" color="primary">Cadastrar</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

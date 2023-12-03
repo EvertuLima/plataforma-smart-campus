@@ -8,22 +8,25 @@ import { Espaco } from '../../interfaces/Espaco';
 })
 export class CreateRoomComponent {
 
-  local!: Espaco;
-  
-
+  local: Espaco = { 
+    id_espaco: undefined,
+    nome: '',
+    descricao: '' 
+  };
   nome: string;
   descricao: string;
 
-  constructor(){
-    this.nome ="";
-    this.descricao="";
+  constructor() {
+    this.nome = "";
+    this.descricao = "";
   }
-  
-  enviarFormulario():void{
-    // this.descricao = algo;
+
+  criarLocal(): void {
+    this.local.nome = this.nome;
     this.local.descricao = this.descricao;
 
-    console.log(`OK ${this.local.nome}`)
-    console.log(`OK ${this.descricao}`)
+    console.log(`Nome do Local: ${this.local.nome}`);
+    console.log(`Descrição do Local: ${this.local.descricao}`);
+
   }
 }
