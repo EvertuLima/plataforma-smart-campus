@@ -1,0 +1,41 @@
+<!-- <div class="container">
+    <mat-card>
+        <mat-card-title>Criar Local</mat-card-title>
+        <mat-card-content>
+            <form class="contact-form">
+                <mat-form-field>
+                    <mat-label>Nome do Local</mat-label>
+                    <input [(ngModel)]="nome" matInput>
+                </mat-form-field>
+                
+                <mat-form-field>
+                    <mat-label>Descrição do local</mat-label>
+                    <textarea [(ngModel)]="descricao" matInput></textarea>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+
+        <button mat-raised-button (click)="enviarFormulario()" color="primary">Primary</button>
+
+      </mat-card>
+</div> -->
+<div class="container">
+    <mat-card>
+        <mat-card-title>Criar Local</mat-card-title>
+        <mat-card-content>
+            <form class="contact-form" #formulario="ngForm" (ngSubmit)="enviarFormulario()">
+                <mat-form-field>
+                    <mat-label>Nome do Local</mat-label>
+                    <input [(ngModel)]="nome" matInput name="nome" required>
+                </mat-form-field>
+                
+                <mat-form-field>
+                    <mat-label>Descrição do local</mat-label>
+                    <textarea [(ngModel)]="descricao" matInput name="descricao" required></textarea>
+                </mat-form-field>
+
+                <button mat-raised-button type="submit" color="primary">Enviar</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
