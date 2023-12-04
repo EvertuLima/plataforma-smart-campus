@@ -23,4 +23,8 @@ export class ApiicampusService {
   getAllEspacos(): Observable<Espaco[]>{
     return this.http.get<Espaco[]>(this.apiUrl2)
   }
+
+  getEspaceById(id: number): Observable<Espaco>{
+    return this.http.get<Espaco>(`${this.apiUrl}/${id}`)
+  }
 }
