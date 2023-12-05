@@ -1,6 +1,6 @@
-{   "servidores": [
+{   "espaces": [
     {
-      "id_espaco": 1,
+      "id": 1,
       "nome": "Espaço 4.0",
       "descricao": "Espaço dedicado a pesquisa"
     },

@@ -35,6 +35,7 @@ import { AdvertsComponent } from './components/pages/adverts/adverts.component';
 import { CreatComponent } from './components/pages/creat/creat.component';
 import { CreateRoomComponent } from './components/shared/create-room/create-room.component';
 import { CreateEmployeeComponent } from './components/shared/create-employee/create-employee.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { CreateEmployeeComponent } from './components/shared/create-employee/cre
     MatSelectModule,
     MatCardModule,
     MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
