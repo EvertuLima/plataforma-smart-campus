@@ -3,6 +3,7 @@ import { Espaco } from '../../interfaces/Espaco';
 import { ActivatedRoute } from '@angular/router';
 import { ApiicampusService } from 'src/app/services/apiicampus.service';
 import {MatTableModule} from '@angular/material/table';
+import { Material } from '../../interfaces/Material';
 
 export interface PeriodicElement {
   name: string;
@@ -35,6 +36,8 @@ export class RoomIdComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   espaco?: Espaco;
+  
+  materias: Material[] = [];
   constructor(
     private route: ActivatedRoute,
     private apiicampus: ApiicampusService

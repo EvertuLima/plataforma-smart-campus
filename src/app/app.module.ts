@@ -36,6 +36,7 @@ import { CreatComponent } from './components/pages/creat/creat.component';
 import { CreateRoomComponent } from './components/shared/create-room/create-room.component';
 import { CreateEmployeeComponent } from './components/shared/create-employee/create-employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateMaterialComponent } from './components/shared/create-material/create-material.component'; 
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { HttpClientModule } from '@angular/common/http';
     CreatComponent,
     CreateRoomComponent,
     CreateEmployeeComponent,
+    CreateMaterialComponent,
   ],
   imports: [
     BrowserModule,
