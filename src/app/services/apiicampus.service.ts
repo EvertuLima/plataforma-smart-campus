@@ -13,7 +13,7 @@ export class ApiicampusService {
 
   private apiUrl = "http://localhost:3000/servidores"
   private apiUrl2 = "http://localhost:3000/espacos"
-  private apiUrl3 = "http://localhost:3000/materials"
+  private apiUrl3 = "http://localhost:3000/materiais"
 
   constructor(private http: HttpClient) { }
 
