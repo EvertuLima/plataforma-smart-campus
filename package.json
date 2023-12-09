@@ -9,7 +9,7 @@
     "test": "ng test",
     "server-servidores": "json-server --watch db-servidores.json",
     "server-espaces": "json-server --watch db-espace.json",
-    "server-materials": "json-server --watch db-espace.json"
+    "server-materials": "json-server --watch db-material.json"
     
   },
   "private": true,

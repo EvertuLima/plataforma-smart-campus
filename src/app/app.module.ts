@@ -45,7 +45,7 @@ import { CreateMaterialComponent } from './components/shared/create-material/cre
     NewUserComponent,
     RoomsComponent,
     RoomSummaryComponent,
-    // RoomIdComponent,
+    RoomIdComponent,
     FilterComponent,
     NavbarComponent,
     AboutUsComponent,
