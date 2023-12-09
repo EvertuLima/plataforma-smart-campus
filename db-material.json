@@ -1,0 +1,49 @@
+{
+  "materiais": [
+    {
+      "id_material": 1,
+      "id_espaco": 1,
+      "tombo": "T123",
+      "descricao": "Computador",
+      "marca": "Dell",
+      "modelo": "Latitude",
+      "estado": "Novo"
+    },
+    {
+      "id_material": 2,
+      "id_espaco": 1,
+      "tombo": "B456",
+      "descricao": "Mesa",
+      "marca": "IKEA",
+      "modelo": "Linnmon",
+      "estado": "Usado"
+    },
+    {
+      "id_material": 3,
+      "id_espaco": 1,
+      "tombo": "T789",
+      "descricao": "Projetor",
+      "marca": "Epson",
+      "modelo": "PowerLite",
+      "estado": "Novo"
+    },
+    {
+      "id_material": 4,
+      "id_espaco": 1,
+      "tombo": "J012",
+      "descricao": "Cadeira",
+      "marca": "Office Depot",
+      "modelo": "True Innovations",
+      "estado": "Usado"
+    },
+    {
+      "id_material": 5,
+      "id_espaco": 1,
+      "tombo": "L345",
+      "descricao": "Notebook",
+      "marca": "HP",
+      "modelo": "EliteBook",
+      "estado": "Novo"
+    }
+  ]
+}

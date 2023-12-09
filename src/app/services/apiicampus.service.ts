@@ -13,6 +13,7 @@ export class ApiicampusService {
 
   private apiUrl = "http://localhost:3000/servidores"
   private apiUrl2 = "http://localhost:3000/espacos"
+  private apiUrl3 = "http://localhost:3000/materials"
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +23,10 @@ export class ApiicampusService {
 
   getAllEspacos(): Observable<Espaco[]>{
     return this.http.get<Espaco[]>(this.apiUrl2)
+  }
+
+  getAllMaterials(): Observable<Material[]>{
+    return this.http.get<Material[]>(this.apiUrl3)
   }
 
   getEspaceById(id: number): Observable<Espaco>{
