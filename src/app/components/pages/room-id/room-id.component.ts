@@ -10,8 +10,11 @@ import { Material } from '../../interfaces/Material';
   styleUrls: ['./room-id.component.css'],
 })
 export class RoomIdComponent {
+
   displayedColumns: string[] = ['tombo', 'descricao', 'marca', 'modelo', 'estado'];
+
   materiais: Material[] = [];
+  materiaisId?: Material;
   espaco?: Espaco;
   
   materias: Material[] = [];
@@ -20,12 +23,23 @@ export class RoomIdComponent {
     private apiicampus: ApiicampusService
   ){
     this.getEspaco();
-    this.getMateriais();
+    // this.getMateriais();
+    this.getMateriaisById();
   }
 
-  getMateriais(){
-    this.apiicampus.getAllMaterials().subscribe((materiais) => (this.materiais = materiais))
+  // getMateriais(){
+  //   this.apiicampus.getAllMaterials().subscribe((materiais) => (this.materiais = materiais))
+  // }
+
+  getMateriaisById() {
+    // const id = Number(this.route.snapshot.paramMap.get("id"));
+    const idEspacoDesejado = 1;
+    
+    this.apiicampus.getMateriaisById(idEspacoDesejado).subscribe((materiais) => {
+      this.materiais = materiais;
+    });
   }
+
   getEspaco(){
     const id = Number(this.route.snapshot.paramMap.get("id"));
     this.apiicampus.getEspaceById(id).subscribe((espaco) => (this.espaco = espaco))

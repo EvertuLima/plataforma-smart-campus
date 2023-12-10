@@ -53,6 +53,15 @@
       "marca": "BIC",
       "modelo": "Esférica",
       "estado": "Novo"
+    },
+    {
+      "id": 1,
+      "id_espaco": 2,
+      "tombo": "AA13",
+      "descricao": "Lapis",
+      "marca": "BIC",
+      "modelo": "Compacto",
+      "estado": "Novo"
     }
   ],
   "servidores": [
@@ -124,11 +133,6 @@
       "id": 5,
       "nome": "Sala 12",
       "descricao": "des"
-    },
-    {
-      "id": 6,
-      "nome": "Sala do magão ",
-      "descricao": "Um cara paia"
     }
   ]
 }

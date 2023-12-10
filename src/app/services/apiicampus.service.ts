@@ -41,6 +41,15 @@ export class ApiicampusService {
     return this.http.get<Material[]>(`${this.apiUrl3}materiais`)
   }
 
+  // getMateriasById(id: number): Observable<Material>{
+  //   return this.http.get<Material>(`${`${this.apiUrl3}materiais`}/${id}`)
+  // }
+  getMateriaisById(id: number): Observable<Material[]> {
+    const url = `${this.apiUrl3}materiais?id_espaco=${id}`;
+    return this.http.get<Material[]>(url);
+  }
+
+
   cadastrarMaterial(material: Material): Observable<Material> {
     return this.http.post<Material>(`${this.apiUrl3}materiais`, material);
   }
