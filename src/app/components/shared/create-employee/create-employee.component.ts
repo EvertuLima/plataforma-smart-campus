@@ -9,16 +9,7 @@ import { ApiicampusService } from 'src/app/services/apiicampus.service';
   styleUrls: ['./create-employee.component.css']
 })
 export class CreateEmployeeComponent {
-
   servidores: Servidor[] = [];
-
-  // servidor: Servidor = {
-  //   id_espaco: undefined,
-  //   nome: '',
-  //   email: '',
-  //   num_telefone: '',
-  //   siape: ''
-  // };
 
   nome: string;
   email: string;
@@ -38,16 +29,14 @@ export class CreateEmployeeComponent {
   }
 
   cadastrarServidor(): void {
-    // const novoServidor: Servidor = {
-    //   id_espaco: undefined,
-    //   nome: this.nome,
-    //   email: this.email,
-    //   num_telefone: this.num_telefone,
-    //   siape: this.siape
-    // };
-    // console.log(`Nome do Servidor: ${novoServidor.nome}`);
-    // console.log(`Email do Servidor: ${novoServidor.email}`);
-    // console.log(`Telefone do Servidor: ${novoServidor.num_telefone}`);
-    // console.log(`SIAPE do Servidor: ${novoServidor.siape}`);
+    const novoServidor: Servidor = {
+      id: 0,
+      nome: this.nome,
+      email: this.email,
+      num_telefone: this.num_telefone,
+      siape: this.siape
+    };
+
+    this.apiicampus.postServidor(novoServidor).subscribe();
   }
 }

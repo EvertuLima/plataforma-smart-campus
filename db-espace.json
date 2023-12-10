@@ -5,17 +5,17 @@
       "descricao": "Espaço dedicado a pesquisa"
     },
     {
-      "id_espaco": 2,
+      "id": 2,
       "nome": "Lema",
       "descricao": "Impressões 3D e afins"
     },
     {
-      "id_espaco": 3,
+      "id": 3,
       "nome": "Sala 19",
       "descricao": "Sala comum"
     },
     {
-      "id_espaco": 4,
+      "id": 4,
       "nome": "Sala 14",
       "descricao": "Sala ainda mais comum"
     } 

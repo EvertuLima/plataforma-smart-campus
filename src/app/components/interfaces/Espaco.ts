@@ -1,5 +1,5 @@
 export interface Espaco {
-    id_espaco?: number;
+    id: number;
     nome:string;
     descricao: string;
 }

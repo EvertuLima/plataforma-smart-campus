@@ -17,7 +17,7 @@ export class CreateMaterialComponent {
   modelo: string;
   estado: string;
 
-  constructor ( private apiicampus: ApiicampusService){
+  constructor (private apiicampus: ApiicampusService){
     this.tombo = '';
     this.descricao = '';
     this.marca =  '';
@@ -28,7 +28,7 @@ export class CreateMaterialComponent {
   cadastrarMaterial(){
     const novoMaterial: Material = {
       id: 0,  // ou o valor padrão que você usa para novos materiais
-      id_espaco: 0,    // ou o valor padrão que você usa para novos materiais
+      id_espaco: 1,    // ou o valor padrão que você usa para novos materiais
       tombo: this.tombo,
       descricao: this.descricao,
       marca: this.marca,
@@ -37,6 +37,5 @@ export class CreateMaterialComponent {
     };
 
     this.apiicampus.cadastrarMaterial(novoMaterial).subscribe();
-
   }
 }

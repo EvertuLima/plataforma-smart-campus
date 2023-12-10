@@ -47,34 +47,7 @@
     },
     {
       "id": 6,
-      "id_espaco": 0,
-      "tombo": "AA12",
-      "descricao": "Caneta",
-      "marca": "BIC",
-      "modelo": "Esférica",
-      "estado": "Novo"
-    },
-    {
-      "id": 7,
-      "id_espaco": 0,
-      "tombo": "AA12",
-      "descricao": "Caneta",
-      "marca": "BIC",
-      "modelo": "Esférica",
-      "estado": "Novo"
-    },
-    {
-      "id": 8,
-      "id_espaco": 0,
-      "tombo": "AA12",
-      "descricao": "Caneta",
-      "marca": "BIC",
-      "modelo": "Esférica",
-      "estado": "Novo"
-    },
-    {
-      "id": 9,
-      "id_espaco": 0,
+      "id_espaco": 1,
       "tombo": "AA12",
       "descricao": "Caneta",
       "marca": "BIC",
@@ -84,39 +57,46 @@
   ],
   "servidores": [
     {
-      "id_espaco": 1,
+      "id": 1,
       "nome": "Turca",
       "email": "email@teste",
       "num_telefone": "40028922",
       "siape": "3421"
     },
     {
-      "id_espaco": 2,
+      "id": 2,
       "nome": "Bem",
       "email": "email@teste",
       "num_telefone": "40028922",
       "siape": "1234"
     },
     {
-      "id_espaco": 3,
+      "id": 3,
       "nome": "Tai",
       "email": "email@teste",
       "num_telefone": "40028922",
       "siape": "4321"
     },
     {
-      "id_espaco": 4,
+      "id": 4,
       "nome": "Juli",
       "email": "email@teste",
       "num_telefone": "40028922",
       "siape": "9876"
     },
     {
-      "id_espaco": 5,
+      "id": 5,
       "nome": "Lora",
       "email": "email@teste",
       "num_telefone": "40028922",
       "siape": "1478"
+    },
+    {
+      "id": 6,
+      "nome": "Everton",
+      "email": "everton@gmail.com",
+      "num_telefone": "400289222",
+      "siape": "1234"
     }
   ],
   "espaces": [
@@ -126,19 +106,29 @@
       "descricao": "Espaço dedicado a pesquisa"
     },
     {
-      "id_espaco": 2,
+      "id": 2,
       "nome": "Lema",
       "descricao": "Impressões 3D e afins"
     },
     {
-      "id_espaco": 3,
+      "id": 3,
       "nome": "Sala 19",
       "descricao": "Sala comum"
     },
     {
-      "id_espaco": 4,
+      "id": 4,
       "nome": "Sala 14",
       "descricao": "Sala ainda mais comum"
-    } 
+    },
+    {
+      "id": 5,
+      "nome": "Sala 12",
+      "descricao": "des"
+    },
+    {
+      "id": 6,
+      "nome": "Sala do magão ",
+      "descricao": "Um cara paia"
+    }
   ]
 }

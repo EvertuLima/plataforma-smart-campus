@@ -1,5 +1,5 @@
 export interface Servidor {
-    id_espaco?: number;
+    id?: number;
     nome: string;
     email: string;
     num_telefone: string;

@@ -13,27 +13,35 @@ export class ApiicampusService {
 
   private apiUrl = "http://localhost:3000/servidores"
   private apiUrl2 = "http://localhost:3000/espacos"
-  private apiUrl3 = "http://localhost:3000/materiais"
+  private apiUrl3 = "http://localhost:3000/"
 
   constructor(private http: HttpClient) { }
 
   getAllServidores(): Observable<Servidor[]>{
-    return this.http.get<Servidor[]>(this.apiUrl)
+    return this.http.get<Servidor[]>(`${this.apiUrl3}servidores`)
+  }
+
+  postServidor(servidor: Servidor): Observable<Servidor> {
+    return this.http.post<Servidor>(`${this.apiUrl3}servidores`, servidor);
   }
 
   getAllEspacos(): Observable<Espaco[]>{
-    return this.http.get<Espaco[]>(this.apiUrl2)
+    return this.http.get<Espaco[]>(`${this.apiUrl3}espaces`)
+  }
+  
+  getEspaceById(id: number): Observable<Espaco>{
+    return this.http.get<Espaco>(`${`${this.apiUrl3}espaces`}/${id}`)
+  }
+
+  cadastrarEspaco(espaco: Espaco): Observable<Espaco> {
+    return this.http.post<Espaco>(`${this.apiUrl3}espaces`, espaco);
   }
 
   getAllMaterials(): Observable<Material[]>{
-    return this.http.get<Material[]>(this.apiUrl3)
-  }
-  
-  cadastrarMaterial(material: Material): Observable<Material> {
-    return this.http.post<Material>(this.apiUrl3, material);
+    return this.http.get<Material[]>(`${this.apiUrl3}materiais`)
   }
 
-  getEspaceById(id: number): Observable<Espaco>{
-    return this.http.get<Espaco>(`${this.apiUrl}/${id}`)
+  cadastrarMaterial(material: Material): Observable<Material> {
+    return this.http.post<Material>(`${this.apiUrl3}materiais`, material);
   }
 }

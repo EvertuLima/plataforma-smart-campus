@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Espaco } from '../../interfaces/Espaco';
+import { ApiicampusService } from 'src/app/services/apiicampus.service';
 
 @Component({
   selector: 'app-create-room',
@@ -8,25 +9,23 @@ import { Espaco } from '../../interfaces/Espaco';
 })
 export class CreateRoomComponent {
 
-  local: Espaco = { 
-    id_espaco: undefined,
-    nome: '',
-    descricao: '' 
-  };
+  local: Espaco[] = [];
+
   nome: string;
   descricao: string;
 
-  constructor() {
+  constructor(private apiicampus: ApiicampusService) {
     this.nome = "";
     this.descricao = "";
   }
 
   criarLocal(): void {
-    this.local.nome = this.nome;
-    this.local.descricao = this.descricao;
-
-    console.log(`Nome do Local: ${this.local.nome}`);
-    console.log(`Descrição do Local: ${this.local.descricao}`);
-
+    const novoLocal: Espaco = {
+      id: 0,
+      nome: this.nome,
+      descricao: this.descricao
+    };
+    
+    this.apiicampus.cadastrarEspaco(novoLocal).subscribe();
   }
 }
