@@ -1,7 +1,7 @@
 {
   "materiais": [
     {
-      "id_material": 1,
+      "id": 1,
       "id_espaco": 1,
       "tombo": "T123",
       "descricao": "Computador",
@@ -10,7 +10,7 @@
       "estado": "Novo"
     },
     {
-      "id_material": 2,
+      "id": 2,
       "id_espaco": 1,
       "tombo": "B456",
       "descricao": "Mesa",
@@ -19,7 +19,7 @@
       "estado": "Usado"
     },
     {
-      "id_material": 3,
+      "id": 3,
       "id_espaco": 1,
       "tombo": "T789",
       "descricao": "Projetor",
@@ -28,7 +28,7 @@
       "estado": "Novo"
     },
     {
-      "id_material": 4,
+      "id": 4,
       "id_espaco": 1,
       "tombo": "J012",
       "descricao": "Cadeira",
@@ -37,13 +37,108 @@
       "estado": "Usado"
     },
     {
-      "id_material": 5,
+      "id": 5,
       "id_espaco": 1,
       "tombo": "L345",
       "descricao": "Notebook",
       "marca": "HP",
       "modelo": "EliteBook",
       "estado": "Novo"
+    },
+    {
+      "id": 6,
+      "id_espaco": 0,
+      "tombo": "AA12",
+      "descricao": "Caneta",
+      "marca": "BIC",
+      "modelo": "Esférica",
+      "estado": "Novo"
+    },
+    {
+      "id": 7,
+      "id_espaco": 0,
+      "tombo": "AA12",
+      "descricao": "Caneta",
+      "marca": "BIC",
+      "modelo": "Esférica",
+      "estado": "Novo"
+    },
+    {
+      "id": 8,
+      "id_espaco": 0,
+      "tombo": "AA12",
+      "descricao": "Caneta",
+      "marca": "BIC",
+      "modelo": "Esférica",
+      "estado": "Novo"
+    },
+    {
+      "id": 9,
+      "id_espaco": 0,
+      "tombo": "AA12",
+      "descricao": "Caneta",
+      "marca": "BIC",
+      "modelo": "Esférica",
+      "estado": "Novo"
     }
+  ],
+  "servidores": [
+    {
+      "id_espaco": 1,
+      "nome": "Turca",
+      "email": "email@teste",
+      "num_telefone": "40028922",
+      "siape": "3421"
+    },
+    {
+      "id_espaco": 2,
+      "nome": "Bem",
+      "email": "email@teste",
+      "num_telefone": "40028922",
+      "siape": "1234"
+    },
+    {
+      "id_espaco": 3,
+      "nome": "Tai",
+      "email": "email@teste",
+      "num_telefone": "40028922",
+      "siape": "4321"
+    },
+    {
+      "id_espaco": 4,
+      "nome": "Juli",
+      "email": "email@teste",
+      "num_telefone": "40028922",
+      "siape": "9876"
+    },
+    {
+      "id_espaco": 5,
+      "nome": "Lora",
+      "email": "email@teste",
+      "num_telefone": "40028922",
+      "siape": "1478"
+    }
+  ],
+  "espaces": [
+    {
+      "id": 1,
+      "nome": "Espaço 4.0",
+      "descricao": "Espaço dedicado a pesquisa"
+    },
+    {
+      "id_espaco": 2,
+      "nome": "Lema",
+      "descricao": "Impressões 3D e afins"
+    },
+    {
+      "id_espaco": 3,
+      "nome": "Sala 19",
+      "descricao": "Sala comum"
+    },
+    {
+      "id_espaco": 4,
+      "nome": "Sala 14",
+      "descricao": "Sala ainda mais comum"
+    } 
   ]
 }

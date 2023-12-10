@@ -1,1 +1,35 @@
-<p>create-material works!</p>
+<div class="container">
+    <mat-card>
+        <mat-card-title>Cadastrar Material</mat-card-title>
+        <mat-card-content>
+            <form class="contact-form" #formulario="ngForm" (ngSubmit)="cadastrarMaterial()">
+                <mat-form-field>
+                    <mat-label>Tombo</mat-label>
+                    <input [(ngModel)]="tombo" matInput name="tombo" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Descricao</mat-label>
+                    <input [(ngModel)]="descricao" matInput name="descricao" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Marca</mat-label>
+                    <input [(ngModel)]="marca" matInput name="marca" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Modelo</mat-label>
+                    <input [(ngModel)]="modelo" matInput name="modelo" required>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Estado</mat-label>
+                    <input [(ngModel)]="estado" matInput name="estado" required>
+                </mat-form-field>
+                
+                <button mat-raised-button type="submit" color="primary">Cadastrar</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

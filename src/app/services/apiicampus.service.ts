@@ -28,6 +28,10 @@ export class ApiicampusService {
   getAllMaterials(): Observable<Material[]>{
     return this.http.get<Material[]>(this.apiUrl3)
   }
+  
+  cadastrarMaterial(material: Material): Observable<Material> {
+    return this.http.post<Material>(this.apiUrl3, material);
+  }
 
   getEspaceById(id: number): Observable<Espaco>{
     return this.http.get<Espaco>(`${this.apiUrl}/${id}`)
