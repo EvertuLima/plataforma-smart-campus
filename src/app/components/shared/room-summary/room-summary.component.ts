@@ -7,11 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./room-summary.component.css']
 })
 export class RoomSummaryComponent {
-  
   @Input() name:string ="";
   @Input() description:string = "";
   @Input() id?:number;
-
-  
 
 }

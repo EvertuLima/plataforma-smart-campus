@@ -1,15 +1,6 @@
 {
   "materiais": [
     {
-      "id": 1,
-      "id_espaco": 1,
-      "tombo": "T123",
-      "descricao": "Computador",
-      "marca": "Dell",
-      "modelo": "Latitude",
-      "estado": "Novo"
-    },
-    {
       "id": 2,
       "id_espaco": 1,
       "tombo": "B456",
@@ -55,42 +46,6 @@
       "estado": "Novo"
     },
     {
-      "id": 1,
-      "id_espaco": 2,
-      "tombo": "AA13",
-      "descricao": "Lapis",
-      "marca": "BIC",
-      "modelo": "Compacto",
-      "estado": "Novo"
-    },
-    {
-      "id": 7,
-      "id_espaco": 1,
-      "tombo": "Caneta 3D",
-      "descricao": "Caneta Legal",
-      "marca": "Chinesa",
-      "modelo": "Paia",
-      "estado": "Quebrado"
-    },
-    {
-      "id": 8,
-      "id_espaco": 1,
-      "tombo": "Caderno",
-      "descricao": "Caderno capa dura de surfista",
-      "marca": "Saraiva",
-      "modelo": "Paia",
-      "estado": "Céara"
-    },
-    {
-      "id": 9,
-      "id_espaco": 3,
-      "tombo": "$#!@",
-      "descricao": "Caneta",
-      "marca": "Chinesa",
-      "modelo": "Paia",
-      "estado": "Quebrado"
-    },
-    {
       "id": 10,
       "id_espaco": 4,
       "tombo": "AA12",
@@ -98,6 +53,24 @@
       "marca": "Saraiva",
       "modelo": "Paia",
       "estado": "Quebrado"
+    },
+    {
+      "id": 11,
+      "id_espaco": 2,
+      "tombo": "AA12",
+      "descricao": "Caneta",
+      "marca": "BIC",
+      "modelo": "Esférica",
+      "estado": "Novo"
+    },
+    {
+      "id": 12,
+      "id_espaco": 5,
+      "tombo": "AA12",
+      "descricao": "Caneta Legal",
+      "marca": "Chinesa",
+      "modelo": "Paia",
+      "estado": "Céara"
     }
   ],
   "servidores": [

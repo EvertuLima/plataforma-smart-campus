@@ -17,14 +17,15 @@ export class RoomIdComponent {
   materiaisId?: Material;
   espaco?: Espaco;
   id:number;
-  
-  materias: Material[] = [];
+
+  qtd = 1;
+
   constructor(
     private route: ActivatedRoute,
     private apiicampus: ApiicampusService
   ){
     this.id = Number(this.route.snapshot.paramMap.get("id"));
-    this.getEspaco();
+    //this.getEspaco();
     // this.getMateriais();
     this.getMateriaisById();
   }
@@ -39,8 +40,27 @@ export class RoomIdComponent {
     });
   }
 
-  getEspaco(){
-    const id = Number(this.route.snapshot.paramMap.get("id"));
-    this.apiicampus.getEspaceById(id).subscribe((espaco) => (this.espaco = espaco))
+  // getEspaco(){
+  //   const id = Number(this.route.snapshot.paramMap.get("id"));
+  //   this.apiicampus.getEspaceById(id).subscribe((espaco) => (this.espaco = espaco))
+  // }
+
+  deleteMaterial(material: Material): void {
+    console.log(material)
+    const confirmation = confirm(`Deseja excluir o material ${material.descricao}?`);
+  
+    if (confirmation) {
+      this.apiicampus.deleteMaterial(material.id).subscribe(() => {
+        // Atualize a lista de materiais após a exclusão
+        this.getMateriaisById();
+      });
+    }
+  }
+
+  updateMaterial(material: Material): void {
+    this.apiicampus.updateMaterial(material).subscribe(() => {
+      // Após a atualização, atualize a lista de materiais
+      this.getMateriaisById();
+    });
   }
 }

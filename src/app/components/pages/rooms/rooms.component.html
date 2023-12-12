@@ -5,8 +5,8 @@
     <div class="title-place">
         <h2>Locais</h2>
     </div>
-    <div class="places-sumary" *ngFor="let local of locais">
-        <app-room-summary 
+    <div class="places-sumary">
+        <app-room-summary *ngFor="let local of locais"
           [name]="local.nome" 
           [description]="local.descricao"
           [id]="local.id"
@@ -16,21 +16,3 @@
   </div>
 </div>
 
-<!-- <div class="container-rooms">
-  <div class="container-places">
-
-    <div class="title-place">
-        <h2>Locais</h2>
-    </div>
-    <div class="places-sumary">
-        <app-room-summary name="breno" description="Descrição teste" tipo ="1"></app-room-summary>
-        <app-room-summary name="Sala 1" description="Descrição teste" tipo ="1"></app-room-summary>
-        <app-room-summary name="Aula do Walter" description="Descrição teste" tipo ="3"></app-room-summary>
-        <app-room-summary name=" Espaço 4.0 " description=" Cultura Maker, Arduino" tipo = "2"></app-room-summary>
-        <app-room-summary name=" Lema " description=" 4.0 Rival " tipo = "3"></app-room-summary>
-        <app-room-summary name=" Lab anti-aula" description=" Meia noite eu te conto" tipo = "2"></app-room-summary>
-        <app-room-summary name=" Victor" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis nesciunt? Ipsum ducimus facere laudantium magni harum doloremque? Iusto, incidunt. " tipo = "2"></app-room-summary>
-        
-    </div>
-  </div>
-</div> -->
