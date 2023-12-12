@@ -1,5 +1,20 @@
+<a routerLink="/room/{{ id }}">
+    <div class="content-room-summary">
+        <label class="content-room-summary-title">
+            <div class="content-room-summary-name">
+                <h4>{{name}}</h4>
+            </div>
+        </label>
+        <div class="content-room-summary-icon">
+            <!-- <img [src]="getImagemPorTipo(tipo)"alt=""> -->
+        </div>
+        <div class="content-room-summary-description">
+            <p>{{description}}</p>
+        </div>
+    </div>
+</a>
 
-<div class="content-room-summary">
+<!-- <div class="content-room-summary">
     <div class="content-room-summary-name">
         <h4>{{name}}</h4>
     </div>
@@ -7,6 +22,6 @@
         <p>{{description}}</p>
     </div>
     <a routerLink="/room/{{ id }}">Visitar</a>
-</div>
+</div> -->
 
-<app-room-id></app-room-id>
+<!-- <app-room-id></app-room-id> -->

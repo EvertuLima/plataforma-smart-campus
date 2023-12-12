@@ -62,6 +62,24 @@
       "marca": "BIC",
       "modelo": "Compacto",
       "estado": "Novo"
+    },
+    {
+      "id": 7,
+      "id_espaco": 1,
+      "tombo": "Caneta 3D",
+      "descricao": "Caneta Legal",
+      "marca": "Chinesa",
+      "modelo": "Paia",
+      "estado": "Quebrado"
+    },
+    {
+      "id": 8,
+      "id_espaco": 1,
+      "tombo": "Caderno",
+      "descricao": "Caderno capa dura de surfista",
+      "marca": "Saraiva",
+      "modelo": "Paia",
+      "estado": "Céara"
     }
   ],
   "servidores": [

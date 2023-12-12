@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Material } from '../../interfaces/Material';
 import { ApiicampusService } from 'src/app/services/apiicampus.service';
 import { ActivatedRoute } from '@angular/router';
@@ -11,6 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class CreateMaterialComponent {
   materiais: Material[] = [];
 
+  @Input() id!: number;
+  
   tombo: string;
   descricao: string;
   marca: string;
