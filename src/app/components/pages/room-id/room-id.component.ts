@@ -16,12 +16,14 @@ export class RoomIdComponent {
   materiais: Material[] = [];
   materiaisId?: Material;
   espaco?: Espaco;
+  id:number;
   
   materias: Material[] = [];
   constructor(
     private route: ActivatedRoute,
     private apiicampus: ApiicampusService
   ){
+    this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.getEspaco();
     // this.getMateriais();
     this.getMateriaisById();
@@ -31,11 +33,8 @@ export class RoomIdComponent {
   //   this.apiicampus.getAllMaterials().subscribe((materiais) => (this.materiais = materiais))
   // }
 
-  getMateriaisById() {
-    // const id = Number(this.route.snapshot.paramMap.get("id"));
-    const idEspacoDesejado = 1;
-    
-    this.apiicampus.getMateriaisById(idEspacoDesejado).subscribe((materiais) => {
+  getMateriaisById() { 
+    this.apiicampus.getMateriaisById(this.id).subscribe((materiais) => {
       this.materiais = materiais;
     });
   }

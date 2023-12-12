@@ -80,6 +80,24 @@
       "marca": "Saraiva",
       "modelo": "Paia",
       "estado": "Céara"
+    },
+    {
+      "id": 9,
+      "id_espaco": 3,
+      "tombo": "$#!@",
+      "descricao": "Caneta",
+      "marca": "Chinesa",
+      "modelo": "Paia",
+      "estado": "Quebrado"
+    },
+    {
+      "id": 10,
+      "id_espaco": 4,
+      "tombo": "AA12",
+      "descricao": "Caneta 3D",
+      "marca": "Saraiva",
+      "modelo": "Paia",
+      "estado": "Quebrado"
     }
   ],
   "servidores": [
