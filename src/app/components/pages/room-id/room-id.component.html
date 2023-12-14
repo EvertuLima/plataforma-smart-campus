@@ -1,5 +1,7 @@
 <h1> Teste {{ id }}</h1>
 <app-create-material [id]="id"></app-create-material>
+
+
 <table mat-table [dataSource]="materiais" class="mat-elevation-z8">
 
     <ng-container matColumnDef="tombo">
@@ -26,8 +28,21 @@
       <th mat-header-cell *matHeaderCellDef> Estado </th>
       <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
     </ng-container>
-  
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row (click)="deleteMaterial(row)" *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Ações </th>
+      <td mat-cell *matCellDef="let element">
+        
+        <button mat-icon-button (click)="updateMaterial(element)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deleteMaterial(element)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
     
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
 </table>

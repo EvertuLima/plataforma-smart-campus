@@ -11,13 +11,13 @@ import { Material } from '../../interfaces/Material';
 })
 export class RoomIdComponent {
 
-  displayedColumns: string[] = ['tombo', 'descricao', 'marca', 'modelo', 'estado'];
+  displayedColumns: string[] = ['tombo', 'descricao', 'marca', 'modelo', 'estado', 'actions'];
 
   materiais: Material[] = [];
   materiaisId?: Material;
   espaco?: Espaco;
   id:number;
-
+  mostrarForms: boolean = false;
   qtd = 1;
 
   constructor(
@@ -58,9 +58,13 @@ export class RoomIdComponent {
   }
 
   updateMaterial(material: Material): void {
+    console.log(material)
+    this.mostrarForms = true;
     this.apiicampus.updateMaterial(material).subscribe(() => {
       // Após a atualização, atualize a lista de materiais
       this.getMateriaisById();
     });
   }
+  
+ 
 }

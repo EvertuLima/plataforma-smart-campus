@@ -9,15 +9,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./create-material.component.css']
 })
 export class CreateMaterialComponent {
-  materiais: Material[] = [];
+  @Input() materiais: Material[] = [];
 
   @Input() id!: number;
   
-  tombo: string;
-  descricao: string;
-  marca: string;
-  modelo: string;
-  estado: string;
+  @Input() action: string = 'Cadastrar';
+  @Input() tombo: string;
+  @Input()  descricao: string;
+  @Input() marca: string;
+  @Input()  modelo: string;
+  @Input() estado: string;
 
   constructor (private apiicampus: ApiicampusService){
     this.tombo = '';

@@ -37,15 +37,6 @@
       "estado": "Novo"
     },
     {
-      "id": 6,
-      "id_espaco": 1,
-      "tombo": "AA12",
-      "descricao": "Caneta",
-      "marca": "BIC",
-      "modelo": "Esférica",
-      "estado": "Novo"
-    },
-    {
       "id": 10,
       "id_espaco": 4,
       "tombo": "AA12",
@@ -68,9 +59,18 @@
       "id_espaco": 5,
       "tombo": "AA12",
       "descricao": "Caneta Legal",
-      "marca": "Chinesa",
+      "marca": "BIC",
+      "modelo": "Esférica",
+      "estado": "Novo"
+    },
+    {
+      "id": 13,
+      "id_espaco": 5,
+      "tombo": "AA12",
+      "descricao": "Caneta 3D",
+      "marca": "BIC",
       "modelo": "Paia",
-      "estado": "Céara"
+      "estado": "Quebrado"
     }
   ],
   "servidores": [
@@ -142,6 +142,11 @@
       "id": 5,
       "nome": "Sala 12",
       "descricao": "des"
+    },
+    {
+      "id": 6,
+      "nome": "Sala do Erick",
+      "descricao": "Sala grande"
     }
   ]
 }
