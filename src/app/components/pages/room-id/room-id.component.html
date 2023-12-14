@@ -1,5 +1,8 @@
-<h1> Teste {{ id }}</h1>
-<app-create-material [id]="id"></app-create-material>
+
+<button mat-raised-button color="primary" (click)="toggleCreateMaterialForm()">
+  Cadastrar
+</button>
+<app-create-material *ngIf="showCreateMaterialForm" [id]="id"></app-create-material>
 
 
 <table mat-table [dataSource]="materiais" class="mat-elevation-z8">

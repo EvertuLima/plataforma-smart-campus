@@ -17,8 +17,8 @@ export class RoomIdComponent {
   materiaisId?: Material;
   espaco?: Espaco;
   id:number;
-  mostrarForms: boolean = false;
-  qtd = 1;
+
+  showCreateMaterialForm: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -30,9 +30,9 @@ export class RoomIdComponent {
     this.getMateriaisById();
   }
 
-  // getMateriais(){
-  //   this.apiicampus.getAllMaterials().subscribe((materiais) => (this.materiais = materiais))
-  // }
+  toggleCreateMaterialForm(): void {
+    this.showCreateMaterialForm = !this.showCreateMaterialForm;
+  }
 
   getMateriaisById() { 
     this.apiicampus.getMateriaisById(this.id).subscribe((materiais) => {
@@ -40,28 +40,19 @@ export class RoomIdComponent {
     });
   }
 
-  // getEspaco(){
-  //   const id = Number(this.route.snapshot.paramMap.get("id"));
-  //   this.apiicampus.getEspaceById(id).subscribe((espaco) => (this.espaco = espaco))
-  // }
-
   deleteMaterial(material: Material): void {
     console.log(material)
     const confirmation = confirm(`Deseja excluir o material ${material.descricao}?`);
   
     if (confirmation) {
       this.apiicampus.deleteMaterial(material.id).subscribe(() => {
-        // Atualize a lista de materiais após a exclusão
         this.getMateriaisById();
       });
     }
   }
 
   updateMaterial(material: Material): void {
-    console.log(material)
-    this.mostrarForms = true;
     this.apiicampus.updateMaterial(material).subscribe(() => {
-      // Após a atualização, atualize a lista de materiais
       this.getMateriaisById();
     });
   }
